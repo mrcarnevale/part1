@@ -1,0 +1,68 @@
+<head>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <title>Project 2 Part ONE</title>
+</head>
+<body>
+  <section>
+    <input class="animate" type="radio" name="question" id="q1"/>
+    <label class="animate" for="q1">Q: Best Food?</label>
+    <p class="response animate">A: Pizza Pizza Pizza!!!</p>
+    <input class="animate" type="radio" name="question" id="q2"/>
+    <label class="animate" for="q2">Q: Nike or Adidas?</label>
+    <p class="response animate">A: Adidas... cmon now have you seen the Yeezy 350s?</p>
+    <input class="animate" type="radio" name="question" id="q3"/>
+    <label class="animate" for="q3">Q: Apple or Android?</label>
+    <p class="response animate">A: Android if you want to customize. Apple if you want it to work.</p>
+    <input class="animate" type="radio" name="question" id="q4"/>
+    <label class="animate" for="q4">Q: Brunch?</label>
+    <p class="response animate">A: Duh... next question please.</p>
+  </section>
+
+  <div class="faq-header">Frequently Asked Questions</div>
+
+  <div class="faq-c">
+    <div class="faq-q"><span class="faq-t">+</span>Best Food?</div>
+    <div class="faq-a">
+      <p>Pizza Pizza Pizza!</p>
+    </div>
+  </div>
+
+  <div class="faq-c">
+    <div class="faq-q"><span class="faq-t">+</span>Nike or Adidas?</div>
+    <div class="faq-a">
+      <p>Adidas... cmon now have you seen the Yeezy 350s?</p>
+    </div>
+  </div>
+
+  <div class="faq-c">
+    <div class="faq-q"><span class="faq-t">+</span>Apple or Android?</div>
+    <div class="faq-a">
+      <p>Android if you want to customize. Apple if you want it to work.</p>
+    </div>
+  </div>
+
+  <div class="faq-c">
+    <div class="faq-q"><span class="faq-t">+</span>Brunch?</div>
+    <div class="faq-a">
+      <p>Duh... next question please.</p>
+    </div>
+  </div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+  $(".faq-q").click(function() {
+  // when you click the faq (that is what is written above)
+  // you want to do something. SHOW the answer
+  $(this).next('.faq-a').toggle();
+ });
+  });
+  </script>
+</body>
+</html>
